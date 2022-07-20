@@ -38,13 +38,48 @@ const Integrations = () => {
         </div>
       </div>
       <div className={style.link_cont}>
-        <div>sd</div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>
+          <img
+            src="https://cdn-m.timecamp.com/img/greenbranding/all.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://cdn-m.timecamp.com/img/greenbranding/pm.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://cdn-m.timecamp.com/img/greenbranding/hd.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://cdn-m.timecamp.com/img/greenbranding/collab.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://cdn-m.timecamp.com/img/greenbranding/collab.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://cdn-m.timecamp.com/img/greenbranding/acc.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://cdn-m.timecamp.com/img/greenbranding/crm.svg"
+            alt=""
+          />
+        </div>
       </div>
       <div></div>
     </div>

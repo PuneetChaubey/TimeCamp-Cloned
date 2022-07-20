@@ -44,10 +44,10 @@
     width: 100%;
     border: black;
     display: flex;
-   justify-content: space-between;
+   justify-content: space-evenly;
     gap:16px;
     margin-top:20px; 
-     margin: auto;
+     
     flex-wrap:wrap;
     flex-direction: row; 
 }
@@ -55,6 +55,12 @@
 .link_cont div{
 width:35px;
   height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border:1px solid gray;
   border-radius: 50%;
+}
+.link_cont img{
+    width: 35%;
 }
