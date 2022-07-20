@@ -1,0 +1,60 @@
+.Cont{
+    width:80%;
+    height: 100vh;
+    border:1px solid red;
+    margin: auto;
+}
+.Box_1 {
+    display: flex;
+    font-size: 8px;
+}
+.cont_2{
+    width: 50%;
+   
+    border: 1px solid gray;
+
+}
+.logo_img{
+    width:100%;
+}
+.cont_btn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.btn_1{
+    display: flex;
+    align-items: center;
+    width:50%;
+    height: 25px;
+    font-size: 6px;
+    font-weight: bold;
+    background-color: #3c91e6;
+    border: none;
+    border-radius: 8px;
+    color:white
+}
+.logo_img_chrome{
+    width: 25%;
+    height: 80%;
+    
+}
+
+.link_cont{
+    width: 100%;
+    border: black;
+    display: flex;
+   justify-content: space-between;
+    gap:16px;
+    margin-top:20px; 
+     margin: auto;
+    flex-wrap:wrap;
+    flex-direction: row; 
+}
+
+.link_cont div{
+width:35px;
+  height: 35px;
+  border:1px solid gray;
+  border-radius: 50%;
+}
