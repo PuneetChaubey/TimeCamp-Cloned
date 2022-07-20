@@ -1,3 +1,21 @@
 .App {
   text-align: center;
 }
+.App {
+  margin: 0;
+}
+
+.compnie-grid {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.logo_grid{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+ 
+
+}
