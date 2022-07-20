@@ -1,0 +1,22 @@
+.faq1 {
+  /* background-color: #fff; */
+  /* border: none; */
+
+  /* border: 1px solid #ccc; */
+  padding: 2rem;
+}
+.faqtext{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 2;
+}
+.footerlinks{
+    font-size: 15px;
+    font-weight: 600;
+    color: #1b1b20;
+    margin-top: 15px;
+    opacity: 0.7;
+}
+.footerlinks:hover{
+    color:#f7b801;
+}

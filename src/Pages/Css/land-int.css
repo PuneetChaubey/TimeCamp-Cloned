@@ -1,0 +1,57 @@
+.integration {
+  padding: 7rem 0 4rem;
+  background-color: #f3f3f3;
+  margin-bottom: 5rem;
+}
+.int-box-1 {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.int-Subbox-1 {
+  display: flex;
+  width: 45%;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  /* border: 1px solid red; */
+}
+.special-paragraph {
+  font-size: 14px;
+  color: #25cf60;
+  font-weight: 700;
+  margin-top: 0;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.btn-check-integrations {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 70%;
+  margin: 2rem 0 0;
+  background-color: #25cf60;
+  font-size: 1rem;
+  border-radius: 40px;
+  padding: 15px 40px;
+}
+.btn-check-integrations:hover {
+  background-color: #2b9d53;
+}
+
+.box-shasow-grid {
+  cursor: pointer;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 2rem;
+  margin-left: 4rem;
+  width: 120px;
+  height: 120px;
+  border-radius: 31px;
+  transition: all 0.2s ease-in-out;
+  background-color: #fff;
+}

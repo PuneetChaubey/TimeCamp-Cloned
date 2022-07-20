@@ -1,0 +1,11 @@
+.textcolor {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1b1b20;
+}
+.textcolor:hover {
+  color: #f7b801;
+}
+.border {
+  padding: 12px;
+}

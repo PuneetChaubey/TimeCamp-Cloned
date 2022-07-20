@@ -1,0 +1,64 @@
+.feedback-box {
+  background-color: #f7b801;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+  border: none;
+}
+.row {
+  justify-content: center;
+  padding-top: 2rem;
+  background-image: url(https://cdn-m.timecamp.com/img/landing-page/time-tracking-biz/group-9.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.feed-text {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+ 
+}
+
+.feed-text > h2 {
+  width: 60%;
+  margin: auto;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  font-family: lato, sans-serif;
+}
+input[type="email"] {
+    /* border: 1px solid #1b1b20; */
+    outline: none;
+    font-size: 1rem;
+    padding: 1rem 4rem 1rem 1.5rem;
+    color: #767676;
+  }
+.input-group {
+  border: none;
+  width: 55%;
+  height: 3rem;
+  outline: none;
+  font-size: 14px;
+  border-radius: 26px;
+  box-shadow: 0 2px 4px 2px rgb(0 0 0 / 7%);
+  background-color: #fff;
+}
+
+.btn-submit {
+  padding: 12px 10px;
+  color: #fff;
+  width: 35%;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 26px;
+  box-shadow: 0 0 0 3px #25cf60;
+  position: relative;
+  background-color: #25cf60;
+  left: -3rem;
+  margin-top: 0;
+}
