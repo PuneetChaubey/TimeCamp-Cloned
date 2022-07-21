@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Input, Text } from "@chakra-ui/react";
+import { Box, Flex, Input, Link, Text } from "@chakra-ui/react";
 import "./css/feedback.css";
 const Feedback = () => {
   return (
@@ -22,13 +22,26 @@ const Feedback = () => {
           <Box mt="1.5rem">
             <form>
               <Box w="60%" m="auto">
-                <Flex alignItems="center" justifyContent="center" flexWrap={"wrap"}>
-                  <input className="input-group" placeholder="Add your Email" type="email" />
+                <Flex
+                  alignItems="center"
+                  justifyContent="center"
+                  flexWrap={"wrap"}
+                >
+                  <input
+                    className="input-group"
+                    placeholder="Add your Email"
+                    type="email"
+                  />
                   <button className="btn-submit">start tracking time</button>
                 </Flex>
               </Box>
             </form>
           </Box>
+          <Text mt="2rem" mb="3rem" className="form-label">
+            By signing up you agree to our 
+            <Link color="#1b1b20">  Terms And Conditions</Link> and{" "}
+            <Link color="#1b1b20">Privacy Policy</Link>
+          </Text>
         </Box>
       </Box>
     </Box>
@@ -36,3 +49,9 @@ const Feedback = () => {
 };
 
 export default Feedback;
+
+// margin: 20px 0;
+//     font-size: 14px;
+//     color: #767676;
+//     opacity: .6;
+//     padding-left: 2rem
