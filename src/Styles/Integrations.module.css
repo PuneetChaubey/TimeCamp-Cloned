@@ -1,16 +1,25 @@
 .Cont{
     width:80%;
-    height: 100vh;
-    border:1px solid red;
+   
     margin: auto;
 }
 .Box_1 {
     display: flex;
-    font-size: 8px;
+   
 }
+.Box_1 h4 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+.Box_1 p{
+   font-size: 8px;
+}
+
 .cont_2{
     width: 50%;
-   
+   margin-top: 20px;
     border: 1px solid gray;
 
 }
@@ -34,11 +43,11 @@
     border-radius: 8px;
     color:white
 }
-.logo_img_chrome{
-    width: 25%;
-    height: 80%;
-    
+.btn_1 i{
+    font-size: 20px;
+    color: green;
 }
+
 
 .link_cont{
     width: 100%;
@@ -63,4 +72,48 @@ width:35px;
 }
 .link_cont img{
     width: 35%;
+}
+.div_cont_bottom{
+display: grid;
+margin-top: 15px;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: auto;
+/* border: 1px solid blue; */
+
+gap:16px;
+}
+
+.div_cont_bottom p{
+    font-size: 4.5px;
+}
+.div_cont_bottom h3{
+    font-size: 10px;
+    font-weight: bold;
+}
+.grid_cont{
+    padding-bottom: 25px;
+}
+.grid_cont:hover {
+   
+  margin: 0px;
+  overflow: inherit;
+  z-index: 10;
+  font-size: 1.15vw;
+
+ box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+.img_div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+      box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+.div_cont_bottom img{
+    width: 25%;
+   
 }
