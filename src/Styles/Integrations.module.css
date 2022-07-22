@@ -8,13 +8,13 @@
    
 }
 .Box_1 h4 {
-    font-size: 16px;
+    font-size: 46px;
     font-weight: bold;
-    line-height: 100%;
-    margin-bottom: 20px;
+    line-height: 125%;
+    margin-bottom: 35px;
 }
 .Box_1 p{
-   font-size: 8px;
+   font-size: 22px;
 }
 
 .cont_2{
@@ -27,24 +27,27 @@
     width:100%;
 }
 .cont_btn{
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 35px;
 }
 .btn_1{
     display: flex;
+    padding-left: 25px;
     align-items: center;
     width:50%;
-    height: 25px;
-    font-size: 6px;
+    height: 75px;
+    font-size: 16px;
     font-weight: bold;
     background-color: #3c91e6;
     border: none;
-    border-radius: 8px;
-    color:white
+    border-radius: 26px;
+    color:white;
+    gap: 16px;
 }
 .btn_1 i{
-    font-size: 20px;
+    font-size: 50px;
     color: green;
 }
 
@@ -62,8 +65,8 @@
 }
 
 .link_cont div{
-width:35px;
-  height: 35px;
+width:80px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,23 +78,29 @@ width:35px;
 }
 .div_cont_bottom{
 display: grid;
-margin-top: 15px;
+margin-top: 45px;
 grid-template-columns: repeat(4, 1fr);
 grid-template-rows: auto;
-/* border: 1px solid blue; */
+border: 1px solid blue;
 
 gap:16px;
 }
 
 .div_cont_bottom p{
-    font-size: 4.5px;
+    font-size: 14px;
+    font-weight:550;
+    text-align:center;
 }
-.div_cont_bottom h3{
-    font-size: 10px;
-    font-weight: bold;
+.div_cont_bottom h2{
+    font-size: 26px;
+    text-align: center;
+    color: #3f4041;
+    font-weight:700;
+    margin-bottom: 30px;
 }
 .grid_cont{
     padding-bottom: 25px;
+    height: 400px;
 }
 .grid_cont:hover {
    

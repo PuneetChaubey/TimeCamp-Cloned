@@ -121,7 +121,7 @@ const Integrations = () => {
               <div className={style.img_div}>
                 <img src={item.image} alt="" />
               </div>
-              <h3>{item.title}</h3>
+              <h2>{item.title}</h2>
               <p>{item.description}</p>
             </div>
           );
