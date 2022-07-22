@@ -1,0 +1,104 @@
+.pricing-box {
+  width: 80%;
+  margin: auto;
+}
+.pricing-text {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #25cf60;
+  line-height: 26px;
+}
+
+.prcing-para {
+  font-size: 18px;
+  padding: 20px 0;
+  margin: 0 28%;
+  color: #767676;
+  line-height: 26px;
+  font-weight: 300;
+  font-family: nunito sans, sans-serif;
+}
+.toggle-prices {
+  height: 50px;
+  width: 390px;
+  margin: auto;
+  margin-bottom: 6rem;
+}
+
+.toggle-prices .switcher-price {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: #fff; */
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 7%);
+  border-radius: 26px;
+  transition: background-color 0.15s ease-in 0.4s, box-shadow 0.15s ease-in 0.4s;
+  cursor: pointer;
+}
+.toggleraction {
+  position: relative;
+  content: "";
+  height: 50px;
+  width: 205px;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: -20px;;
+  background-color: #25cf60;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 7%);
+  border-radius: 26px;
+}
+.switcher-text,
+.switcher-text-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  color: #b7b7b7;
+  cursor: pointer;
+}
+
+.switcher-text-2 {
+  color: #b7b7b7;
+  cursor: pointer;
+  margin-bottom: 0;
+  padding-right: 1rem;
+  z-index: 1;
+}
+.switcher-tttt{
+    color:#25cf60;
+}
+.text-onfo-plane {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.btn-btn,
+.btn-check-integrationss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 1.2rem 0 0;
+  background-color: #25cf60;
+  font-size: 1rem;
+  border-radius: 25px;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+.listofplan {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.btn-btn {
+  background-color: white;
+  color: #25cf60;
+}
