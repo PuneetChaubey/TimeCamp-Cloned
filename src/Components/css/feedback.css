@@ -20,7 +20,6 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 2rem;
- 
 }
 
 .feed-text > h2 {
@@ -32,16 +31,16 @@
   font-family: lato, sans-serif;
 }
 input[type="email"] {
-    /* border: 1px solid #1b1b20; */
-    outline: none;
-    font-size: 1rem;
-    padding: 1rem 4rem 1rem 1.5rem;
-    color: #767676;
-  }
+  /* border: 1px solid #1b1b20; */
+  outline: none;
+  font-size: 1rem;
+  padding: 1rem 4rem 1rem 1.5rem;
+  color: #767676;
+}
 .input-group {
   border: none;
   width: 55%;
-  height: 3rem;
+  height: 3.5rem;
   outline: none;
   font-size: 14px;
   border-radius: 26px;
@@ -50,9 +49,9 @@ input[type="email"] {
 }
 
 .btn-submit {
-  padding: 12px 10px;
+  padding: 15px 12px;
   color: #fff;
-  width: 35%;
+  width: 32%;
   font-weight: 700;
   font-size: 16px;
   border-radius: 26px;
@@ -61,4 +60,13 @@ input[type="email"] {
   background-color: #25cf60;
   left: -3rem;
   margin-top: 0;
+}
+
+.form-label {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #767676;
+  opacity: 0.6;
+  padding-left: 2rem;
+  word-spacing: 2px;
 }

@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 
 import "../Components/Navbar.css";
-
+import { Link as ReactRouterLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -47,9 +47,13 @@ export default function Navbar() {
           </Box>
           <Box width="30%">
             <Flex justifyContent="space-between" cursor="pointer">
-              <Text className="textcolor">Features</Text>
+              <ReactRouterLink to="/features">
+                <Text className="textcolor">Features</Text>
+              </ReactRouterLink>
               <Text className="textcolor">Pricing</Text>
-              <Text className="textcolor">Integration</Text>
+              <ReactRouterLink to="/integrations">
+                <Text className="textcolor">Integration</Text>
+              </ReactRouterLink>
               <Text className="textcolor">Blog</Text>
             </Flex>
           </Box>
@@ -63,7 +67,9 @@ export default function Navbar() {
                 Book a Demo
               </Text>
 
-              <Text className="textcolor">Sign in</Text>
+              <ReactRouterLink to="/auth/login">
+                <Text className="textcolor">Sign in</Text>
+              </ReactRouterLink>
 
               <Button
                 colorScheme="yellow"
