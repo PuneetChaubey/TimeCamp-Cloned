@@ -9,3 +9,6 @@
 .border {
   padding: 12px;
 }
+.navbar-main-body{
+  z-index: 1;
+}

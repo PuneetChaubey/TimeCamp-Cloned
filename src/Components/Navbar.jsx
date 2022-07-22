@@ -16,7 +16,7 @@ import { Link as ReactRouterLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <>
+    <div className="navbar-main-body">
       {/* #25cf60 */}
       <Box bg={useColorModeValue("#25cf60", "#25cf60")} px={4}>
         <Flex h={16} alignItems={"center"} justifyContent={"center"}>
@@ -40,10 +40,12 @@ export default function Navbar() {
           //   border="1px solid red"
         >
           <Box width="10%" cursor="pointer">
-            <Image
-              src="https://cdn-m.timecamp.com/img/greenbranding/colorLogo.svg"
-              alt="logo"
-            />
+            <ReactRouterLink to="/">
+              <Image
+                src="https://cdn-m.timecamp.com/img/greenbranding/colorLogo.svg"
+                alt="logo"
+              />
+            </ReactRouterLink>
           </Box>
           <Box width="30%">
             <Flex justifyContent="space-between" cursor="pointer">
@@ -83,6 +85,6 @@ export default function Navbar() {
           </Box>
         </Flex>
       </Box>
-    </>
+    </div>
   );
 }
