@@ -24,7 +24,7 @@ import { MdOutlineComputer } from "react-icons/md";
 //import sidebar css from react-pro-sidebar module and our custom css
 import "react-pro-sidebar/dist/css/styles.css";
 import "./Header.css";
-
+import { Link as ReactRouterLink } from "react-router-dom";
 const Header = () => {
   //create initial menuCollapse state using useState hook
   const [menuCollapse, setMenuCollapse] = useState(false);
@@ -71,7 +71,7 @@ const Header = () => {
                 <MenuItem icon={<GoReport />}>Reports</MenuItem>
                 <MenuItem icon={<MdOutlineComputer />}>Computer Time</MenuItem>
                 <p>MANAGE</p>
-                <MenuItem icon={<AiTwotoneProject />}>Projects</MenuItem>
+             <ReactRouterLink to="/projects"><MenuItem icon={<AiTwotoneProject />}>Projects</MenuItem></ReactRouterLink>  
                 <MenuItem icon={<BsTags />}>Tages</MenuItem>
                 <p>TEAM</p>
                 <MenuItem icon={<FiUsers />}>Users</MenuItem>
