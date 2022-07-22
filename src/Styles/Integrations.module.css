@@ -20,7 +20,7 @@
 .cont_2{
     width: 50%;
    margin-top: 20px;
-    border: 1px solid gray;
+    
 
 }
 .logo_img{
@@ -81,7 +81,7 @@ display: grid;
 margin-top: 45px;
 grid-template-columns: repeat(4, 1fr);
 grid-template-rows: auto;
-border: 1px solid blue;
+
 
 gap:16px;
 }

@@ -1,12 +1,10 @@
 import "./App.css";
 import { MainRoutes } from "./Pages/MainRoutes";
-import LandingPAge from "./Pages/LandingPAge";
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
+import Stopwatch from "./Components/Stopwatch";
 function App() {
   return (
     <div  >
-      
+      <Stopwatch/>
       <MainRoutes />
    
     </div>
