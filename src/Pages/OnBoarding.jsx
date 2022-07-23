@@ -24,7 +24,7 @@ export const OnBoarding = () => {
         <Text>This will only take a minute.</Text>
         <Stack direction="row" margin="auto">
           <Button width="50%">
-            <Link to="/">Use default settings</Link>
+            <Link to="/header">Use default settings</Link>
           </Button>
           <Button width="50%" color="white" backgroundColor="green.400">
             Let's do it!

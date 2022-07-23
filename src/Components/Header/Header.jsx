@@ -1,6 +1,6 @@
 //import useState hook to create menu collapse state
 import React, { useState } from "react";
-
+import Card from "../timer/Card";
 //import react pro sidebar components
 import {
   ProSidebar,
@@ -11,20 +11,41 @@ import {
 } from "react-pro-sidebar";
 
 //import icons from react icons
-import { Flex, Spacer, Box, Heading, ButtonGroup } from "@chakra-ui/react";
+
 import { FiUsers } from "react-icons/fi";
-import { Button } from "@chakra-ui/react";
-import { FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
+import { FaRegEdit } from "react-icons/fa";
+import { Button, Flex, Box, Heading, Spacer } from "@chakra-ui/react";
+import {
+  FiArrowLeftCircle,
+  FiArrowRightCircle,
+  FiSettings,
+} from "react-icons/fi";
 import { GrStatusGood } from "react-icons/gr";
-import { BsTags } from "react-icons/bs";
-import { BiTimeFive } from "react-icons/bi";
-import { AiFillDashboard, AiTwotoneProject } from "react-icons/ai";
+import {
+  BsTags,
+  BsHourglassTop,
+  BsCalendarDateFill,
+  BsArrowClockwise,
+  BsThreeDotsVertical,
+} from "react-icons/bs";
+import {
+  IoIosArrowBack,
+  IoIosArrowDown,
+  IoIosArrowForward,
+} from "react-icons/io";
+import { BiTimeFive, BiUserCircle, BiUserPlus } from "react-icons/bi";
+import {
+  AiFillDashboard,
+  AiTwotoneProject,
+  AiFillStop,
+  AiOutlineUser,
+} from "react-icons/ai";
 import { GoReport } from "react-icons/go";
 import { MdOutlineComputer } from "react-icons/md";
-//import sidebar css from react-pro-sidebar module and our custom css
 import "react-pro-sidebar/dist/css/styles.css";
-import "./Header.css";
 import { Link as ReactRouterLink } from "react-router-dom";
+import "./Header.css";
+
 const Header = () => {
   //create initial menuCollapse state using useState hook
   const [menuCollapse, setMenuCollapse] = useState(false);
@@ -60,24 +81,130 @@ const Header = () => {
               </div>
             </SidebarHeader>
             <SidebarContent>
-              <Menu iconShape="square">
+              <Menu>
                 <p>TRACK</p>
-                <MenuItem active={true} icon={<BiTimeFive />}>
-                  Timesheet
-                </MenuItem>
-
+                <div
+                  style={{
+                    display: "flex",
+                    height: "39px",
+                    marginLeft: "10px",
+                  }}
+                >
+                  <div>
+                    <h1>{<BiTimeFive />}</h1>
+                  </div>
+                  <div style={{ marginLeft: "10px", fontSize: "20px" }}>
+                    <p>Timesheet</p>
+                  </div>
+                </div>
+                <hr />
                 <p>ANALYZE</p>
-                <MenuItem icon={<AiFillDashboard />}>Dashboard</MenuItem>
-                <MenuItem icon={<GoReport />}>Reports</MenuItem>
-                <MenuItem icon={<MdOutlineComputer />}>Computer Time</MenuItem>
+                <div
+                  style={{
+                    display: "flex",
+                    height: "39px",
+                    marginLeft: "10px",
+                  }}
+                >
+                  <div>
+                    <h1>{<AiFillDashboard />}</h1>
+                  </div>
+                  <div style={{ marginLeft: "10px", fontSize: "20px" }}>
+                    <p>Dashboard</p>
+                  </div>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    height: "39px",
+                    marginLeft: "10px",
+                  }}
+                >
+                  <div>
+                    <h1>{<GoReport />}</h1>
+                  </div>
+                  <div style={{ marginLeft: "10px", fontSize: "20px" }}>
+                    <p>Reports</p>
+                  </div>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    height: "39px",
+                    marginLeft: "10px",
+                  }}
+                >
+                  <div>
+                    <h1>{<MdOutlineComputer />}</h1>
+                  </div>
+                  <div style={{ marginLeft: "10px", fontSize: "20px" }}>
+                    <p>Computer Time</p>
+                  </div>
+                </div>
+                <hr />
                 <p>MANAGE</p>
                 <ReactRouterLink to="/projects">
                   <MenuItem icon={<AiTwotoneProject />}>Projects</MenuItem>
                 </ReactRouterLink>
                 <MenuItem icon={<BsTags />}>Tages</MenuItem>
+                <div
+                  style={{
+                    display: "flex",
+                    height: "39px",
+                    marginLeft: "10px",
+                  }}
+                >
+                  <div>
+                    <h1>{<AiTwotoneProject />}</h1>
+                  </div>
+                  <div style={{ marginLeft: "10px", fontSize: "20px" }}>
+                    <p>Projects</p>
+                  </div>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    height: "39px",
+                    marginLeft: "10px",
+                  }}
+                >
+                  <div>
+                    <h1>{<BsTags />}</h1>
+                  </div>
+                  <div style={{ marginLeft: "10px", fontSize: "20px" }}>
+                    <p>Tages</p>
+                  </div>
+                </div>
+                <hr />
                 <p>TEAM</p>
-                <MenuItem icon={<FiUsers />}>Users</MenuItem>
-                <MenuItem icon={<GrStatusGood />}>Users</MenuItem>
+                <div
+                  style={{
+                    display: "flex",
+                    height: "39px",
+                    marginLeft: "10px",
+                  }}
+                >
+                  <div>
+                    <h1>{<FiUsers />}</h1>
+                  </div>
+                  <div style={{ marginLeft: "10px", fontSize: "20px" }}>
+                    <p>Users</p>
+                  </div>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    height: "39px",
+                    marginLeft: "10px",
+                  }}
+                >
+                  <div>
+                    <h1>{<GrStatusGood />}</h1>
+                  </div>
+                  <div style={{ marginLeft: "10px", fontSize: "20px" }}>
+                    <p>Attendance</p>
+                  </div>
+                </div>
               </Menu>
             </SidebarContent>
           </ProSidebar>
@@ -85,7 +212,7 @@ const Header = () => {
         <div className="main">
           <div className="btn">
             <h2>
-              {" "}
+              {<BsHourglassTop />}
               12 days left in your Pro trial{" "}
               <Button
                 marginStart="8px"
@@ -101,17 +228,82 @@ const Header = () => {
               </Button>
             </h2>
           </div>
+          <hr />
+          <div className="logo">
+            <div>
+              <h1>TimeSheet</h1>
+            </div>
+            <div className="logo1">
+              <h1>
+                {" "}
+                {<FiSettings />} {<AiFillStop />} {<BiUserCircle />}{" "}
+                {<BiUserPlus />}{" "}
+              </h1>
+            </div>
+          </div>
+          <hr />
+          <div
+            style={{
+              textAlign: "center",
+              fontSize: "22px",
+              fontFamily: "sans-serif",
+            }}
+          >
+            {" "}
+            <p>
+              <img
+                src="https://cdn.timecamp.com/res/css/dashboard/gcalendar.svg"
+                alt=""
+              />{" "}
+              <span style={{ color: "blue" }}>
+                Enable Calendar Integration to
+              </span>{" "}
+              pull all your Calendar events into your timesheet Don't show this
+              again
+            </p>
+          </div>
+          <hr />
+          <div className="logo">
+            <div>
+              <Button>
+                <h1>
+                  {<IoIosArrowBack />} {<BsCalendarDateFill />}{" "}
+                  {<IoIosArrowDown />} {<IoIosArrowForward />}
+                </h1>
+              </Button>
+            </div>
+            <div>
+              <Button>
+                <h2>Day</h2>
+              </Button>
+              <Button>
+                <h2>calendar</h2>
+              </Button>
+              <Button>
+                <h2>{<BsArrowClockwise />} </h2>
+              </Button>
+              <Button>
+                <h2>
+                  {<AiOutlineUser />} {<IoIosArrowDown />}
+                </h2>
+              </Button>
+              <Button>
+                <h2>{<FaRegEdit />} Builk Edit</h2>
+              </Button>
+              <Button>
+                <h2>{<BsThreeDotsVertical />}</h2>
+              </Button>
+            </div>
+          </div>
+          <hr />
           <div>
             <Flex minWidth="max-content" alignItems="center" gap="2">
               <Box p="2">
                 <Heading size="md">TimeSheet</Heading>
               </Box>
               <Spacer />
-              <ButtonGroup gap="1">
-                <Button colorScheme="teal">Sign Up</Button>
-                <Button colorScheme="teal">Log in</Button>
-              </ButtonGroup>
             </Flex>
+            <Card />
           </div>
         </div>
       </div>

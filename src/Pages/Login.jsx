@@ -198,7 +198,7 @@ export const Login = () => {
                         <p>Please Wait</p>
                       ) : (
                         <p>
-                          <RouterLink to="/">Log In</RouterLink>
+                          <RouterLink to="/header">Log In</RouterLink>
                         </p>
                       )}
                     </Button>

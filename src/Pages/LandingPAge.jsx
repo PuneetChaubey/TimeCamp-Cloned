@@ -17,7 +17,8 @@ import LandingIntegration from "./LandingIntegration";
 import AccordionPage from "../Components/Accordion";
 import Footer from "../Components/Footer";
 import Feedback from "../Components/Feedback";
-import {Review} from "./Review"
+import { Review } from "./Review";
+import "./Css/landingLast.css";
 
 const LandingPAge = () => {
   const company = [
@@ -91,9 +92,16 @@ const LandingPAge = () => {
 
       <Information />
       <ProdctCallDemo />
-      <Review/>
+      <Review />
 
-      <Grid templateColumns="repeat(4, 1fr)" gap={6} w="80%" m="auto" mb="2rem" mt={100}>
+      <Grid
+        templateColumns="repeat(4, 1fr)"
+        gap={6}
+        w="80%"
+        m="auto"
+        mb="2rem"
+        mt={100}
+      >
         <GridItem w="60%">
           <Image src="https://cdn-m.timecamp.com/img/greenbranding/features/crozdesk.png" />
         </GridItem>
@@ -108,7 +116,6 @@ const LandingPAge = () => {
           <Image src="https://cdn-m.timecamp.com/img/greenbranding/features/get-app.png" />
         </GridItem>
       </Grid>
-
 
       <LandingIntegration />
       <Feedback />

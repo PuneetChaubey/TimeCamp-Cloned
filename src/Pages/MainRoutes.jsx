@@ -7,7 +7,7 @@ import LandingPAge from "../Pages/LandingPAge";
 import Feature from "../Components/Feature";
 import Project from "./Project";
 import { OnBoarding } from "./OnBoarding";
-import Header from "../Components/Header/Header";
+import Header from "./../Components/Header/Header";
 
 export const MainRoutes = () => {
   return (
