@@ -71,7 +71,9 @@ const Header = () => {
                 <MenuItem icon={<GoReport />}>Reports</MenuItem>
                 <MenuItem icon={<MdOutlineComputer />}>Computer Time</MenuItem>
                 <p>MANAGE</p>
-             <ReactRouterLink to="/projects"><MenuItem icon={<AiTwotoneProject />}>Projects</MenuItem></ReactRouterLink>  
+                <ReactRouterLink to="/projects">
+                  <MenuItem icon={<AiTwotoneProject />}>Projects</MenuItem>
+                </ReactRouterLink>
                 <MenuItem icon={<BsTags />}>Tages</MenuItem>
                 <p>TEAM</p>
                 <MenuItem icon={<FiUsers />}>Users</MenuItem>
@@ -100,7 +102,7 @@ const Header = () => {
             </h2>
           </div>
           <div>
-            <Flex minWidth="max-content" alignItems="center"  gap="2">
+            <Flex minWidth="max-content" alignItems="center" gap="2">
               <Box p="2">
                 <Heading size="md">TimeSheet</Heading>
               </Box>
