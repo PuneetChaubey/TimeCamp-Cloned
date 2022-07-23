@@ -1,0 +1,128 @@
+.Cont{
+    width:80%;
+   
+    margin: auto;
+}
+.Box_1 {
+    display: flex;
+   
+}
+.Box_1 h4 {
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 125%;
+    margin-bottom: 35px;
+}
+.Box_1 p{
+   font-size: 22px;
+}
+
+.cont_2{
+    width: 50%;
+   margin-top: 20px;
+    
+
+}
+.logo_img{
+    width:100%;
+}
+.cont_btn{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.btn_1{
+    display: flex;
+    padding-left: 25px;
+    align-items: center;
+    width:50%;
+    height: 75px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #3c91e6;
+    border: none;
+    border-radius: 26px;
+    color:white;
+    gap: 16px;
+}
+.btn_1 i{
+    font-size: 50px;
+    color: green;
+}
+
+
+.link_cont{
+    width: 100%;
+    border: black;
+    display: flex;
+   justify-content: space-evenly;
+    gap:16px;
+    margin-top:20px; 
+     
+    flex-wrap:wrap;
+    flex-direction: row; 
+}
+
+.link_cont div{
+width:80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:1px solid gray;
+  border-radius: 50%;
+}
+.link_cont img{
+    width: 35%;
+}
+.div_cont_bottom{
+display: grid;
+margin-top: 45px;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: auto;
+
+
+gap:16px;
+}
+
+.div_cont_bottom p{
+    font-size: 14px;
+    font-weight:550;
+    text-align:center;
+}
+.div_cont_bottom h2{
+    font-size: 26px;
+    text-align: center;
+    color: #3f4041;
+    font-weight:700;
+    margin-bottom: 30px;
+}
+.grid_cont{
+    padding-bottom: 25px;
+    height: 400px;
+}
+.grid_cont:hover {
+   
+  margin: 0px;
+  overflow: inherit;
+  z-index: 10;
+  font-size: 1.15vw;
+
+ box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+.img_div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+      box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+.div_cont_bottom img{
+    width: 25%;
+   
+}

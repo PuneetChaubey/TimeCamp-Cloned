@@ -1,0 +1,28 @@
+.demoBox {
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 8rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  line-height: 1.5;
+}
+.demoBox-1 {
+  display: flex;
+  justify-content: space-between;
+  /* border:1px solid white */
+}
+/* .demoRow {
+  display: flex;
+  flex-wrap: wrap;
+} */
+.demotextMain {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 6rem;
+}
+.demoImgMain{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

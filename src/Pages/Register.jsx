@@ -2,26 +2,19 @@ import {
   Flex,
   Box,
   FormControl,
-  FormLabel,
-  Input,
-  InputGroup,
-  HStack,
-  InputRightElement,
   Stack,
   Button,
   Heading,
   Text,
+  Input,
   useColorModeValue,
-  EditablePreview,
-  EditableTextarea,
-  Editable,
 } from "@chakra-ui/react";
 import { useReducer, useState } from "react";
-import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
-import { Link as RouterLink, useNavigate } from "react-router-dom";
+import { Link, Link as RouterLink, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import React from "react";
 import { REGISTER_SUCCESS } from "../Redux/Auth/actionType";
+import { AuthNavbar } from "../Components/AuthNavbar";
 function reducer(state, action) {
   switch (action.type) {
     case "name":
@@ -72,16 +65,19 @@ export const Register = () => {
   const [state, setter] = useReducer(reducer, initialState);
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  console.log(state);
+  // console.log(state);
   const signupHandler = () => {
     dispatch(Register(state)).then((r) => {
       if (r === REGISTER_SUCCESS) {
-        navigate("/login", { replace: true });
+        navigate("/auth/login", { replace: true });
       }
     });
   };
+  const authLink = "/auth/login";
+  const authName = "Login";
   return (
     <Box>
+      <AuthNavbar authLink={authLink} authName={authName} />
       <Box display="flex" width="80%" margin="auto">
         <Box width="60%">
           <Flex
@@ -220,7 +216,7 @@ export const Register = () => {
                 bg={useColorModeValue("white", "gray.700")}
                 p={8}
               >
-                <Stack spacing={4}>
+                <Stack spacing={4} textAlign="center">
                   <Button backgroundColor="white" border="1px solid lightgray">
                     <img
                       width="20px"
@@ -282,7 +278,7 @@ export const Register = () => {
                       ml="22%"
                       onClick={signupHandler}
                     >
-                      Sign up for free
+                      <Link to="/onboarding">Sign up for free</Link>
                     </Button>
                   </Box>
                 </Stack>
