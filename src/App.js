@@ -4,9 +4,9 @@ import { MainRoutes } from "./Pages/MainRoutes";
 function App() {
   return (
     <div>
-      {/* <Stopwatch/> */}
-      <MainRoutes />
-      
+     
+       <MainRoutes />
+  
 
     </div>
   );
