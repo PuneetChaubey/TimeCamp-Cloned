@@ -12,7 +12,6 @@ function Card() {
     setServiceList(list);
   };
 
-  //remove todo input
   const handleServiceRemove = (index) => {
     const list = [...serviceList];
     list.splice(index, 1);
